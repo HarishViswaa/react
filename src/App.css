@@ -1,0 +1,145 @@
+body {
+  background-color: #007bff;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #0056b3;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.nav li :hover{
+  list-style: square;
+  padding: 5px 10px;
+  background-color: #d0e90d;
+  border-radius: 4px;
+  color: #0c0303;
+  
+}
+
+.nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.timeline {
+  border: solid;
+  border-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.timeline-column {
+  width: 15%;
+  border-right: 1px solid white;
+  padding: 10px;
+}
+
+.timeline-column h3 {
+  margin-top: 0;
+}
+
+.timeline-item {
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+.timeline-item span {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.timeline-item p {
+  margin: 0;
+}
+
+.timeline-item i {
+  float: right;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.timeline-item.completed:hover {
+  background-color: #28a745;
+  animation-duration: 3sec;
+  padding: 5px;
+}
+
+.timeline-item.in-progress {
+  background-color: #ffc107;
+}
+
+.timeline-item.blocked {
+  background-color: #dc3545;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: #ccc;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.user-icon span {
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search {
+  display: inline-block;
+}
+
+.users {
+  padding-left: 30px;
+  display: inline-block;
+}
+
+.searchInput {
+  border-radius: 5px;
+  padding: 5px 5px 5px 10px;
+  margin-left: 10px;
+}
